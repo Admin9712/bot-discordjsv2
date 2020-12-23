@@ -7,6 +7,7 @@ exports.run = (client, message, args) => {
 	.setTitle(`COMMANDOS DE EL BOT`) 
 	.addField(`**Reacciona con 😀**`, `\`\`\`Para ver los Comandos de los Usuarios\`\`\``)
 	.addField(`**Reacciona con 🎮**`, `\`\`\`Para ver los Comandos de el Owner de el Bot\`\`\``)
+	 .addField(`**Reacciona con ❌**`, `\`\`\`Para eliminar el Embed de Ayuda\`\`\``)
 	.setTimestamp()
 	.setFooter(config.textoFooter)
 	.setColor(config.colorEmbeds)
@@ -36,12 +37,14 @@ exports.run = (client, message, args) => {
     message.channel.send(inicio).then(m => {
         m.react('😀')
         m.react('🎮')
-        m.react('🏘️')         
+        m.react('🏘️')    
+	m.react('❌')       
         m.awaitReactions((reaction, user) => {
             if(message.author.id !== user.id) return; 
             if(reaction.emoji.name === '😀') return m.edit(aymiemb);
             if(reaction.emoji.name === '🎮') return m.edit(ayownerbot);
-            if(reaction.emoji.name === '🏘️') return m.edit(inicio);                                   
+            if(reaction.emoji.name === '🏘️') return m.edit(inicio);  
+	    if(reaction.emoji.name === '❌') return m.delete();                                  
             })
 })
 }
