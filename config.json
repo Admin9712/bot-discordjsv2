@@ -1,5 +1,6 @@
 {
     "token": "",
     "prefijo": "",
-    "footer": ""
+	"ownerBotID": "",
+	"footer": ""
 }
