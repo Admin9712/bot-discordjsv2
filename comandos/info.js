@@ -18,7 +18,7 @@ exports.run = (client, message, args) => {
                 status = "⚫ Desconectado";
                 break;
         }
-const exampleEmbed1 = new Discord.MessageEmbed()
+const embedInfo = new Discord.MessageEmbed()
 	.setColor(config.colorEmbeds)
 	.setDescription(`**❯ Info de el ${member.bot ? 'Bot' : 'Usuario'} ${member}**`)
 	.addField(`**❯ ⦿** **__${member.bot ? 'Bot' : 'Usuario'}__**:`, `**${member.tag}** (**__${member}__**)`, true)
@@ -27,6 +27,4 @@ const exampleEmbed1 = new Discord.MessageEmbed()
 	.addField(`**❯ ⦿ Cuenta Creada el**:`, `**__${member.createdAt.toDateString()}__**`, true)
 	.setTimestamp()
 .setFooter(config.textoFooter)
-message.channel.send(exampleEmbed1);
-}
-
+message.reply(embedInfo);
