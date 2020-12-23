@@ -16,10 +16,11 @@ exports.run = (client, message, args) => {
 	.setTitle(`COMMANDOS`) 
 	.setDescription(`**PARA LOS USUARIOS**
 ----------------------------------------------
-⦿ \`${config.prefijo}\`**__ayuda__**         = **\`Comando que te enseña esto\`**
+⦿ \`${config.prefijo}\`**__ayuda__**        = **\`Comando que te enseña esto\`**
 ⦿ \`${config.prefijo}\`**__ping__**         = **\`Comando de respuesta\`**
-⦿ \`${config.prefijo}\`**__prefijo__**         = **\`Comando que te dira el prefijo de el bot\`**`) 
-	.addField("Los Usuarios tienen", `**\`3\`** **__Comandos__**`)
+⦿ \`${config.prefijo}\`**__prefijo__**      = **\`Comando que te dira el prefijo de el bot\`**
+⦿ \`${config.prefijo}\`**__info__**         = **\`Comando que te dara tu Info o la info de el Mencionado\`**`) 
+	.addField("Los Usuarios tienen", `**\`4\`** **__Comandos__**`)
 	.setTimestamp()
 	.setFooter(config.textoFooter)
 	.setColor(config.colorEmbeds)
@@ -28,7 +29,7 @@ exports.run = (client, message, args) => {
 	.setTitle(`COMMANDOS`) 
 	.setDescription(`**PARA EL OWNER DE EL BOT**
 -------------------------------------------------------
-⦿ \`${config.prefijo}\`**__say__**     = **\`Comando para enviar un mensaje desde el Bot\`**
+⦿ \`${config.prefijo}\`**__say__**     	    = **\`Comando para enviar un mensaje desde el Bot\`**
 ⦿ \`${config.prefijo}\`**__sayembed__**     = **\`Comando para enviar un mensaje desde el Bot en un Embed\`**`) 
 	.addField("El Owner Tiene", `**\`2\`** **__Comandos__**`)
 	.setTimestamp()
