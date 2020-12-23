@@ -17,7 +17,7 @@ fs.readdir("./comandos/", (err, files) => {
     });
 });
     
-    fs.readdir('./eventos/', (err, files) => 
+    fs.readdir('./eventos/', (err, files) => {
         if (err) console.log(err);
         files.forEach(file => {
             let eventFunc = require(`./eventos/${file}`);
