@@ -1,4 +1,4 @@
-| [DESCARGAR](https://github.com/Whoisadri2/bot-discordjs) | [WEB UTILIZADA](https://discord.js.org/#/) | [TUTORIAL](https://www.youtube.com/watch?v=-uP-KtHl6YU&t=1s) |
+| [DESCARGAR](https://github.com/Whoisadri2/bot-discordjsv2) | [WEB UTILIZADA](https://support.glitch.com/t/beginner-discord-bot-with-command-handler/9683) | [TUTORIAL](https://www.youtube.com/watch?v=-uP-KtHl6YU&t=1s) |
 | :---: | :---: | :---: |
 
 ---
