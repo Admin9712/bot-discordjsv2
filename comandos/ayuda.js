@@ -7,7 +7,7 @@ exports.run = (client, message, args) => {
 	.setTitle(`COMMANDOS DE EL BOT`) 
 	.addField(`**Reacciona con 😀**`, `\`\`\`Para ver los Comandos de los Usuarios\`\`\``)
 	.addField(`**Reacciona con 🎮**`, `\`\`\`Para ver los Comandos de el Owner de el Bot\`\`\``)
-	 .addField(`**Reacciona con ❌**`, `\`\`\`Para eliminar el Embed de Ayuda\`\`\``)
+	.addField(`**Reacciona con ❌**`, `\`\`\`Para eliminar el Embed de Ayuda\`\`\``)
 	.setTimestamp()
 	.setFooter(config.textoFooter)
 	.setColor(config.colorEmbeds)
