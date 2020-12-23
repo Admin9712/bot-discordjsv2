@@ -1,6 +1,7 @@
 {
     "token": "",
     "prefijo": "",
-	"ownerBotID": "",
-	"footer": ""
+    "ownerBotID": "",
+    "textoFooter": "",
+    "colorEmbeds": "" 
 }
