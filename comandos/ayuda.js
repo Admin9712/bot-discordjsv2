@@ -8,8 +8,8 @@ exports.run = (client, message, args) => {
 	.addField(`**Reacciona con 😀**`, `\`\`\`Para ver los Comandos de los Usuarios\`\`\``)
 	.addField(`**Reacciona con 🎮**`, `\`\`\`Para ver los Comandos de el Owner de el Bot\`\`\``)
 	.setTimestamp()
-	.setFooter(config.footer)
-	.setColor(`#ff0000`)
+	.setFooter(config.textoFooter)
+	.setColor(config.colorEmbeds)
 
 	const aymiemb = new Discord.MessageEmbed()   
 	.setTitle(`COMMANDOS`) 
@@ -20,8 +20,8 @@ exports.run = (client, message, args) => {
 ⦿ \`${config.prefijo}\`**__prefijo__**         = **\`Comando que te dira el prefijo de el bot\`**`) 
 	.addField("Los Usuarios tienen", `**\`3\`** **__Comandos__**`)
 	.setTimestamp()
-	.setFooter(config.footer)
-	.setColor(`#ff0000`)
+	.setFooter(config.textoFooter)
+	.setColor(config.colorEmbeds)
 
 	const ayownerbot = new Discord.MessageEmbed()   
 	.setTitle(`COMMANDOS`) 
@@ -31,8 +31,8 @@ exports.run = (client, message, args) => {
 ⦿ \`${config.prefijo}\`**__sayembed__**     = **\`Comando para enviar un mensaje desde el Bot en un Embed\`**`) 
 	.addField("El Owner Tiene", `**\`2\`** **__Comandos__**`)
 	.setTimestamp()
-	.setFooter(config.footer)
-	.setColor(`#ff0000`)
+	.setFooter(config.textoFooter)
+	.setColor(config.colorEmbeds)
     message.channel.send(inicio).then(m => {
         m.react('😀')
         m.react('🎮')
