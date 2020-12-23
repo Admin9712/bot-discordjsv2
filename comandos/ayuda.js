@@ -27,8 +27,9 @@ exports.run = (client, message, args) => {
 	.setTitle(`COMMANDOS`) 
 	.setDescription(`**PARA EL OWNER DE EL BOT**
 -------------------------------------------------------
-⦿ \`${config.prefijo}\`**__say__**     = **\`Comando para enviar un mensaje desde el Bot\`**`) 
-	.addField("El Owner Tiene", `**\`1\`** **__Comando__**`)
+⦿ \`${config.prefijo}\`**__say__**     = **\`Comando para enviar un mensaje desde el Bot\`**
+⦿ \`${config.prefijo}\`**__sayembed__**     = **\`Comando para enviar un mensaje desde el Bot en un Embed\`**`) 
+	.addField("El Owner Tiene", `**\`2\`** **__Comandos__**`)
 	.setTimestamp()
 	.setFooter(config.footer)
 	.setColor(`#ff0000`)
