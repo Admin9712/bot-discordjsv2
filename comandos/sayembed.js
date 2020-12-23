@@ -10,7 +10,7 @@ exports.run = (client, message, args) => {
 	.setAuthor(message.author.tag) 
 	.setDescription(texto)
 	.setTimestamp()
-	.setFooter(config.footer)
-	.setColor(`#ff0000`)
+	.setFooter(config.textoFooter)
+	.setColor(config.colorEmbeds)
   message.channel.send(sayembed);
 }
