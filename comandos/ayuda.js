@@ -1,5 +1,6 @@
 const Discord = require("discord.js")
 const config = require('../config.json');
+
 exports.run = (client, message, args) => {
 
 	 const inicio = new Discord.MessageEmbed()   
