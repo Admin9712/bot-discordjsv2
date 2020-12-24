@@ -20,8 +20,9 @@ exports.run = (client, message, args) => {
 ⦿ \`${config.prefijo}\`**__ping__**         = **\`Comando de respuesta\`**
 ⦿ \`${config.prefijo}\`**__prefijo__**      = **\`Comando que te dira el prefijo de el bot\`**
 ⦿ \`${config.prefijo}\`**__info__**         = **\`Comando que te dara tu Info o la info de el Mencionado\`**
-⦿ \`${config.prefijo}\`**__infocanal__**    = **\`Comando que te dara la info de el canal o la info de el canal Mencionado\`**`) 
-	.addField("Los Usuarios tienen", `**\`5\`** **__Comandos__**`)
+⦿ \`${config.prefijo}\`**__infocanal__**    = **\`Comando que te dara la info de el canal o la info de el canal Mencionado\`**
+⦿ \`${config.prefijo}\`**__infoserver__**    = **\`Comando que te dara la Info de el Servidor\`**`) 
+	.addField("Los Usuarios tienen", `**\`6\`** **__Comandos__**`)
 	.setTimestamp()
 	.setFooter(config.textoFooter)
 	.setColor(config.colorEmbeds)
