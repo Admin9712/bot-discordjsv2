@@ -27,5 +27,6 @@ fs.readdir("./comandos/", (err, files) => {
         });
 });
 
-client.on("ready", () => console.log("Online!"));
+// AQUI PUEDES AÑADIR ALGUN EVENTO
+
 client.login(config.token)
