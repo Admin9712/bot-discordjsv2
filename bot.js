@@ -11,8 +11,8 @@ fs.readdir("./comandos/", (err, files) => {
     files.forEach(file => {
         if (!file.endsWith(".js")) return;
         let props = require(`./comandos/${file}`);
-        console.log("Comando Cargado " + file)
         let commandName = file.split(".")[0];
+        console.log("Comando Cargado " + commandName)
         client.commands.set(commandName, props);
     });
 });
@@ -21,8 +21,8 @@ fs.readdir("./comandos/", (err, files) => {
         if (err) console.log(err);
         files.forEach(file => {
             let eventFunc = require(`./eventos/${file}`);
-            console.log("Evento cargado " + file)
             let eventName = file.split(".")[0];
+            console.log("Evento cargado " + eventName)
             client.on(eventName, (...args) => eventFunc.run(client, ...args));
         });
 });
