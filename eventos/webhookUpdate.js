@@ -4,8 +4,6 @@ const config = require('../config.json');
 exports.run = async(client, channel) => {
 channel.guild.fetchAuditLogs().then(logs => { 
   let userID = logs.entries.first().executor.id;
-  let userAvatar = logs.entries.first().executor.avatarURL();
-
   let embedwebed = new Discord.MessageEmbed()
     .setTitle('**[ACTUALIZACIÓN DE WEBHOOK]**')
     .setColor(config.colorEmbeds)
