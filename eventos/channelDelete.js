@@ -20,7 +20,7 @@ exports.run = async(client, channel) => {
        .setColor(config.colorEmbeds)
        .addField("Canal Eliminado:", channel.name, true)
        .addField("ID Canal Eliminado:", `**\`${channel.id}\`**`, true)
-       .addField("Tipo de Canal:", `${tcanal}`, false)
+       .addField("Tipo de Canal:", `\`${tcanal}\``, false)
        .addField("Canal Eliminado Por:", `**__<@!${userID}>__**`, true)
        .addField("ID De el que ha borrado el Canal", `**\`${userID}\`**`, true)
        .setTimestamp()
