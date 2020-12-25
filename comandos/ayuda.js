@@ -37,7 +37,7 @@ exports.run = (client, message, args) => {
 ⦿ \`${p}\`**__sayembed__**          = **\`Comando para enviar un mensaje desde el Bot en un Embed\`**
 ⦿ \`${p}\`**__sayuser__**           = **\`Comando para enviar un mensaje con una WebHook desde tu usuario o otro Usuario\`**
 ⦿ \`${p}\`**__eval__**    	    = **\`Comando para realizar una Operacion en Js desde Discord\`**`) 
-	.addField("El Owner Tiene", `**\`3\`** **__Comandos__**`)
+	.addField("El Owner Tiene", `**\`4\`** **__Comandos__**`)
 	.setTimestamp()
 	.setFooter(config.textoFooter)
 	.setColor(config.colorEmbeds)
