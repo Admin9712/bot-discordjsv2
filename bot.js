@@ -15,16 +15,19 @@ fs.readdir("./comandos/", (err, files) => {
         console.log("Comando Cargado " + commandName)
         client.commands.set(commandName, props);
     });
+console.log("Comandos Cargados " + files.length)
 });
     
     fs.readdir('./eventos/', (err, files) => {
         if (err) console.log(err);
+	   
         files.forEach(file => {
             let eventFunc = require(`./eventos/${file}`);
             let eventName = file.split(".")[0];
             console.log("Evento cargado " + eventName)
             client.on(eventName, (...args) => eventFunc.run(client, ...args));
         });
+console.log("Eventos Cargados " + files.length)
 });
 
 // AQUI PUEDES AÑADIR ALGUN EVENTO
