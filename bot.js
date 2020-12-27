@@ -6,9 +6,11 @@ const config = require('./config.json');
 client.commands = new Discord.Collection();
 client.aliases = new Discord.Collection();
 client.events = new Discord.Collection();
+
  let today = new Date();
  let data = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
  let tiempo = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+
 fs.readdir("./comandos/", (err, files) => {
     if (err) return console.log(err);
     files.forEach(file => {
