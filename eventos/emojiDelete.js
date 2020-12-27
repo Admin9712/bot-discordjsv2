@@ -19,6 +19,5 @@ if(!emoji.guild.member(client.user).hasPermission('VIEW_AUDIT_LOG')) return;
     .setFooter(config.textoFooter)
        let canalLogs = client.channels.cache.get(config.idCanalLogs);
        canalLogs.send(embedbrem);
-   
  })
 }
