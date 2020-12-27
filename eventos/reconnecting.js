@@ -7,5 +7,5 @@ exports.run = async(client) => {
  let tiempo = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
  let canalLogs = client.channels.cache.get(config.idCanalLogs);
  canalLogs.send(`[${data}][${tiempo}]: Bot se ha vuelto a conectar.`)
- console.log(`[${date}${time}] : Bot se ha vuelto a conectar.`);
+ console.log(`[${data}${tiempo}] : Bot se ha vuelto a conectar.`);
 }
