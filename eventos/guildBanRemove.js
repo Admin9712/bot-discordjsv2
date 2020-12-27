@@ -5,7 +5,6 @@ exports.run = async(client, guild, user) => {
 if(!guild.member(client.user).hasPermission('VIEW_AUDIT_LOG')) return;
  guild.fetchAuditLogs().then(logs => { 
   let userID = logs.entries.first().executor.id;
-  let userAvatar = logs.entries.first().executor.avatarURL();
  let embeusds = new Discord.MessageEmbed() 
     .setTitle('**[USUARIO DESBANEADO]**')
     .setColor(config.colorEmbeds)
