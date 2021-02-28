@@ -1,4 +1,4 @@
-[![BOTJSV2](https://github-readme-stats.vercel.app/api/pin/?username=Whoisadri2&repo=bot-discordjsv2&theme=dark)](https://github.com/Whoisadri2/bot-discordjsv2)<br/>
+[![BOTJSV2](https://github-readme-stats.vercel.app/api/pin/?username=Admin9712&repo=bot-discordjsv2&theme=dark)](https://github.com/Admin9712/bot-discordjsv2)<br/>
 | [DESCARGAR](https://github.com/Whoisadri2/bot-discordjsv2) | [WEB UTILIZADA](https://support.glitch.com/t/beginner-discord-bot-with-command-handler/9683) | [TUTORIAL](https://www.youtube.com/watch?v=wSoRtWm64n8) |
 | :---: | :---: | :---: |
 
